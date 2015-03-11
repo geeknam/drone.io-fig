@@ -5,6 +5,11 @@ nginx:
   ports:
     - "80:80"
 
+db:
+  image: postgres
+  ports:
+    - "5432"
+
 drone:
   build: .
   links:
